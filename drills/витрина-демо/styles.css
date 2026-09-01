@@ -1,0 +1,62 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #f4f1ec;
+  color: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+.card {
+  max-width: 560px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e2ddd4;
+  border-radius: 12px;
+  padding: 32px;
+}
+h1 { font-size: 28px; margin-bottom: 8px; }
+h2 { font-size: 18px; margin: 24px 0 12px; }
+.offer { color: #555; }
+.slots { display: flex; flex-wrap: wrap; gap: 8px; }
+.slot {
+  padding: 8px 14px;
+  border: 1px solid #b9b2a6;
+  border-radius: 8px;
+  background: #faf8f4;
+  cursor: pointer;
+  font: inherit;
+}
+.slot.selected { background: #2b2b2b; color: #fff; }
+.slot:disabled {
+  background: #eceae6;
+  color: #a09a90;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+.hint { font-size: 13px; color: #8a8478; margin-top: 8px; }
+form { display: flex; flex-direction: column; gap: 10px; }
+label { font-size: 14px; color: #555; }
+input {
+  padding: 10px 12px;
+  border: 1px solid #b9b2a6;
+  border-radius: 8px;
+  font: inherit;
+}
+button[type="submit"] {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2b2b2b;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+.confirmation {
+  margin-top: 14px;
+  padding: 12px;
+  background: #eef5ec;
+  border: 1px solid #cfe3cb;
+  border-radius: 8px;
+}
+.error { background: #f9ecec; border-color: #e3cbcb; }

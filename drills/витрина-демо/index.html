@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Витрина — консультации мастера</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Мастерская Анны</h1>
+    <p class="offer">Разбираю ваш проект и даю план действий за одну
+    консультацию. 25 минут, по делу, без воды.</p>
+
+    <section>
+      <h2>Свободные окна на этой неделе</h2>
+      <div id="slots" class="slots"></div>
+      <p class="hint">Окно — 25 минут. Между окнами буфер 5 минут.</p>
+    </section>
+
+    <section>
+      <h2>Заявка</h2>
+      <form id="booking-form">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" placeholder="Как к вам обращаться">
+        <button type="submit">Оставить заявку</button>
+      </form>
+      <p id="confirmation" class="confirmation" hidden></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
