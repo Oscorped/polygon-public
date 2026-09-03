@@ -2,7 +2,7 @@
 # Миссия 05 — протокол приёмки и релиз
 set -u
 fail=0
-p="project/docs/приёмка.md"
+p="project/docs/acceptance.md"
 [ -s "$p" ] || { echo "FAIL: нет $p"; fail=1; }
 if [ -s "$p" ]; then
   grep -qiE "провал|прош" "$p" || { echo "FAIL: в протоколе нет вердиктов прошёл/провален"; fail=1; }

@@ -2,7 +2,7 @@
 # Миссия 04 — разведка и решение по её итогам
 set -u
 fail=0
-r="project/docs/разведка-04.md"
+r="project/docs/recon-04.md"
 [ -s "$r" ] || { echo "FAIL: нет $r"; fail=1; }
 if [ -s "$r" ]; then
   grep -qE "^\|.*\|.*\|" "$r" || { echo "FAIL: в разведке нет сводной таблицы"; fail=1; }
